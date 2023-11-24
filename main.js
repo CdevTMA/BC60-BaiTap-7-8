@@ -66,11 +66,7 @@ function findLastEven() {
       break;
     }
   }
-  document.getElementById(
-    "lastEven"
-  ).innerHTML = `Số chẵn cuối cùng trong mảng là: ${
-    lastEven !== -1 ? lastEven : "Không có số chẵn"
-  }`;
+  document.getElementById("lastEven").innerHTML = `Số chẵn cuối cùng trong mảng là: ${lastEven !== -1 ? lastEven : "Không có số chẵn"}`;
 }
 
 function swapValues() {
@@ -143,19 +139,17 @@ function addRealNumbers() {
 function comparePositiveNegative() {
     var positiveCount = 0;
     var negativeCount = 0;
-    for (let i = 0; i < numbers.length; i++) {
+    for (var i = 0; i < numbers.length; i++) {
         if (numbers[i] > 0) {
             positiveCount++;
         } else if (numbers[i] < 0) {
             negativeCount++;
         }
     }
-    updateContent("Số lượng số dương: " + positiveCount + ", Số lượng số âm: " + negativeCount, "comparePosNeg");
-}
+    const resultElement = document.getElementById("comparePosNeg");
+    resultElement.innerHTML = "Số lượng số dương: " + positiveCount + ", Số lượng số âm: " + negativeCount;
+  }
 
-function updateContent(message, elementId) {
-    const resultElement = document.getElementById(elementId);
-    resultElement.textContent = message;
-}
+  
 
 
