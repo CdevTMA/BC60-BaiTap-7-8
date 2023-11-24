@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>JS Bài Tập 7 & 8</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header">  
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label for="numberInput">Nhập số nguyên:</label>
+                      <input type="number" id="numberInput" placeholder="Nhập số n">
+                      <button class="btn btn-info" onclick="addNumber()"> Thêm số</button>
+                      <p id="pThemSo" class="card-text"></p>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="calculateSum()">1. Tổng số dương</button>
+                    <p id="PositiveNumber" class="card-text"></p>
+
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="countPositive()">2. Đếm số dương</button>
+                    <p id="countPosivtive"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="findMin()">3. Số nhỏ nhất</button>
+                    <p id="minNumber"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="findMinPositive()">4. Số dương nhỏ nhất</button>
+                    <p id="minPositive"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="findLastEven()">5. Số chẵn cuối cùng</button>
+                    <p id="lastEven"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="swapValues()">6. Đổi chỗ 2 giá trị</button>
+                    <p id="swapValues"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="sortArray()">7. Sắp xếp tăng dần</button>
+                    <p id="arrayOrder"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="findFirstPrime()">8. Số nguyên tố đầu tiên</button>
+                    <p id="firstPrime"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="addRealNumbers()">9. Đếm số nguyên</button>
+                    <p id="realNumber"></p>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-info" onclick="comparePositiveNegative()">10. So sánh số dương và số âm</button>
+                    <p id="comparePosNeg"></p>
+                  </div>
+                  
+                  <div class="card-footer text-muted">
+                  </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+   
+    <div>
+    </div>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
